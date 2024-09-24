@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        h2 {
+            margin-bottom: 15px; /* Reduced margin */
+            font-size: 1.8rem; /* Smaller heading */
+            color: #fff;
+        }
+
+        /* Form styling */
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px; /* Reduced padding */
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 280px; /* Further reduced width */
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 8px 0 4px; /* Reduced margin */
+            font-size: 0.9rem; /* Smaller font for labels */
+            font-weight: bold;
+        }
+
+        input {
+            width: 80%;
+            padding: 8px; /* Kept smaller padding */
+            margin-bottom: 10px; /* Slightly smaller margin */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 0.9rem; /* Reduced font size */
+        }
+
+        button {
+            width: 100%;
+            padding: 10px; /* Kept compact padding */
+            background-color: #2575fc;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #6a11cb;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            form {
+                width: 100%;
+                padding: 12px; /* Adjusted padding for mobile */
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Register</h2>
+        <form method="post" action="/register">
+            <label for="id">EId:</label>
+            <input type="text" id="id" name="EId" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="designation">Designation:</label>
+            <input type="text" id="designation" name="designation" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
